@@ -25,7 +25,7 @@ const useInput = name => {
   return {
     id: inputId.current,
     name,
-    value: formState[name],
+    value: formState[name] || '',
     onChange: onChangeHandler,
   };
 };
