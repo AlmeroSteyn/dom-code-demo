@@ -1,0 +1,79 @@
+$color-button-primary: #004aa9;
+$color-button-secondary: #575757;
+$color-negative: darken(#c7162b, 15%);
+$color-caution: #ffa500;
+
+@import '~vanilla-framework/scss/vanilla';
+
+@include vf-base;
+@include vf-p-forms;
+@include vf-p-buttons;
+
+@import '_forms';
+@import '_buttons';
+@import '_notifications';
+@import '_tabs';
+@import '_spinner_buttons';
+@import '_helpers.scss';
+@import '_resets';
+
+body {
+  font-family: 'Operator Mono', 'Verdana', sans-serif;
+}
+
+main {
+  max-width: 50%;
+  margin-top: 3em;
+  margin-left: 5em;
+  margin-right: auto;
+}
+
+.button-icon {
+  padding: 0.1em 0.2em 0;
+
+  img {
+    width: 1em;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+button {
+  font-size: 2em;
+  padding: 0.5em !important;
+  max-width: 30%;
+}
+
+input {
+  border: 1px solid darkslategray;
+  border-radius: 0.2em;
+  font-size: 2em;
+  font-family: 'Operator Mono', 'Verdana', sans-serif;
+  margin-bottom: 1em;
+  &:focus {
+    outline: 2px solid dodgerblue;
+    outline-offset: 0.1em;
+  }
+}
